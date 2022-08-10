@@ -14,7 +14,7 @@
 
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="./index.php">Home</a></li>
                     <li><a href="">Conheça a Dona Rita</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
