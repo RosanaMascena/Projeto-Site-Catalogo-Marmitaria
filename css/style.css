@@ -1,4 +1,358 @@
-.banner-home img {
-    width: 1500px;
-    height: 400px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Parte de navegação*/
+nav{
+    width: 100%;
+    background-color: #FBC60E;
+    display: flex;
+    margin: px 0;			
+}
+
+.lista-nav{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.lista-nav li{
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.lista-nav li a{
+    padding: 0 26px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #391E12;
+}
+
+.lista-nav li a:hover{
+    color: #FDFDFD;
+}
+
+#logo{
+    width: 40%;
+    margin-left: 50px;
+}
+
+/*Banner*/
+.main_banner{
+    width: 100%;
+    background-image: url('../img/Banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main_banner .main_banner_caixa{
+    max-width: 1600px;
+    padding: 120px 20px;
+    background-color: rgba(51, 51, 51, 0.616);
+}
+
+.main_banner .main_banner_caixa h1{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main_banner .main_banner_caixa p{
+    font-size: 1.875em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.main_banner .main_banner_caixa .btn{
+    background-color: #FBC60E;
+    color: #FDFDFD;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;border-radius: 5px;
+}
+
+/*Produtos*/
+.main_produtos{
+    max-width: calc(1500px - 90px);
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main_produtos .main_produtos_header{
+    flex-basis: 100%;
+    margin: 30px 0;
+}
+
+.main_produtos article img{
+    width: 100%;
+}
+
+.main_produtos .main_produtos_header h1{
+    color: #391E12;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+}
+
+.main_produtos .caixa-produto-lista{
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 30px;
+    border: solid 3px #FBC60E;
+    border-radius: 5px;
+    padding: 15px 15px;
+}
+
+.main_produtos article h2{
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.btn-produto-lista button{
+    font-weight: 600;
+    color: #FDFDFD;
+    background-color: #FBC60E;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-produto-lista button:hover{
+    transform: scale(1.1);
+}
+
+/*Newsletter*/
+.main_newsletter{
+    margin: 40px 0;
+    background-color: #FBC60E;
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    justify-items: center;
+}
+
+.news-col-1, .news-col-2{
+	display: flex;
+	align-items: center;
+}
+
+.news-col-1 .fa-envelope{
+    font-size: 5em;
+    color: #391E12;
+}
+
+.news-col-1 p{
+    font-size: 20px;
+    margin-left: 25px;
+    color: #391E12;
+}
+
+.news-col-2 input{
+    width: 22em;
+	height: 2em;
+    border: 0;
+	border-radius: 5px;
+    padding-left: 10px;
+}
+
+.btn-news{
+    font-size: 16px;
+	color: #FDFDFD;
+	border: none;
+	background-color: #391E12;
+	margin-left: 25px;
+	padding: 6px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Footer*/
+.footer-conteudo {
+    display: grid;
+    grid-template-columns: 21% 22% 14% 41%;
+    justify-items: center;
+    margin-bottom: 3em;
+}
+
+.img-footer{
+    width: 60%;
+    margin-left: 100px;
+}
+
+.footer-conteudo h3 {
+    margin-bottom: 15px;
+}
+
+.footer-conteudo ul {
+	list-style: none;
+}
+
+.footer-conteudo li {
+    margin-bottom: 10px;
+}
+
+.footer-conteudo a {
+    color: #391E12;
+}
+
+.footer-conteudo a:hover {
+    color: #FBC60E;
+}
+
+.footer-conteudo .conteudo-col-3 i {
+    color: #391E12;
+    margin-right: 10px;
+}
+
+.assinatura {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Página Produto*/
+#produto-completo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.imagem-produto-completo{
+    width: 80%;
+}
+
+div#conteudo-prod-completo h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #391E12;
+    margin-bottom: 40px;
+}
+
+.tamanhos {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.preco-P, .preco-M, .preco-G{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.itens-prato, .ingredientes-prato{
+    margin-top: 25px;
+}
+
+/*Página Quem Somos*/
+#main_quem_somos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-quem-somos{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#main_caixa_quem_somos h1{
+    font-size: 50px;
+    text-align: center;
+    color: #391E12;
+    margin-bottom: 50px;
+}
+
+#main_caixa_quem_somos p{
+    margin: 25px 150px;
+    color: #391E12;
+    line-height: 25px;
+}
+
+/*Formulário pedido e contato*/
+.form-pedido-produto, .form-contato{
+    margin: 30px 0px 30px 90px;
+}
+
+.form-pedido-produto h2, .form-contato h2{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.form-pedido-produto form label, .form-pedido-produto form legend, .form-contato form label, .form-contato form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.enviar-pedido, .enviar-contato{
+    font-size: 18px;
+    font-weight: 600;
+	color: #FDFDFD;
+	border: none;
+	background-color: #FBC60E;
+	padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enviar-pedido:hover, .enviar-contato:hover{
+    transform: scale(1.1);
+}
+
+/*Recebendo dados de pedido e contato*/
+#main_dados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-dados{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#main_caixa_dados h1{
+    font-size: 36px;
+    text-align: center;
+    color: #391E12;
+    margin-bottom: 50px;
+}
+
+#main_caixa_dados p{
+    margin: 25px 150px;
+    color: #391E12;
+    line-height: 25px;
 }
