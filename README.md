@@ -18,6 +18,10 @@ Depois, baixe ou clone este repositório na sua máquina local, dentro da pasta 
 
 Na aba do seu navegador digite localhost/nome-da-pasta-do-projeto. Prontinho, você estará visualizando todo Projeto Dona Rita.
 
+## Link de Hospedagem
+
+https://marmitasdonarita.000webhostapp.com/
+
 ## Linguagens e pacotes utilizados:
 
 <div style="display: grid; grid-auto-flow:column; width: fit-content; gap: 0.5rem;">
